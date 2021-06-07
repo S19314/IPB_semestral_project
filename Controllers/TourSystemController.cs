@@ -19,13 +19,15 @@ namespace IPB_semestral_project_Version2.Controllers
         {
             _logger = logger;
         }
-         
+
         /*
         public TourSystemController(ITourService tourService)
         {{
             this.TourService = tourService;
         }
-        */  
+        */
+
+        [Route("formulation")]
         [HttpGet]
         public IEnumerable<Formulation> Get()
         {
