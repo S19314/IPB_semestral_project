@@ -41,6 +41,20 @@ namespace IPB_semestral_project_Version2.Controllers
         {
             return TourService.GetFormulationsWithAdditionalInfo();
         }
+
         
+        [Route("option")]
+        [HttpGet]
+        public IEnumerable<TourOption> GetTourOptions()
+        {
+            return TourService.GetTourOptions();
+        }
+        
+        [Route("option/{id}")]
+        [HttpGet]
+        public TourOption GetTourOptionsById(int id)
+        {
+            return TourService.GetTourOptionById(id);
+        }
     }
 }

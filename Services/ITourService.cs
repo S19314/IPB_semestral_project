@@ -10,5 +10,7 @@ namespace IPB_semestral_project_Version2.Services
     {
         public IEnumerable<Formulation> GetFormulations();
         public IEnumerable<Formulation> GetFormulationsWithAdditionalInfo();
+        public IEnumerable<TourOption> GetTourOptions();
+        public TourOption GetTourOptionById(int id);
     }
 }
