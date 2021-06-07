@@ -29,9 +29,18 @@ namespace IPB_semestral_project_Version2.Controllers
 
         [Route("formulation")]
         [HttpGet]
-        public IEnumerable<Formulation> Get()
+        public IEnumerable<Formulation> GetFormulations()
         {
-            return TourService.GetFormulation();
+            return TourService.GetFormulations();
         }
+        
+        
+        [Route("formulationwithaddinfo")]
+        [HttpGet]
+        public IEnumerable<Formulation> GetFormulationsWithAdditionalInfo()
+        {
+            return TourService.GetFormulationsWithAdditionalInfo();
+        }
+        
     }
 }

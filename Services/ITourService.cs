@@ -8,6 +8,7 @@ namespace IPB_semestral_project_Version2.Services
 {
     public interface ITourService
     {
-        public IEnumerable<Formulation> GetFormulation();
+        public IEnumerable<Formulation> GetFormulations();
+        public IEnumerable<Formulation> GetFormulationsWithAdditionalInfo();
     }
 }

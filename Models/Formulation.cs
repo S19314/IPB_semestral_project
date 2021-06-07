@@ -13,5 +13,9 @@ namespace IPB_semestral_project_Version2.Models
         public string CityName { get; set; }
         public double Budget { get; set; }
         public int QuantityOfPeronsForTour { get; set; }
+        public DateTime StartDateTime { get; set; }
+        public DateTime EndDateTime { get; set; }
+        public bool IsAdditionalInfoSet { get; set; }
+        public string AdditionalInfo { get; set; }
     }
 }
