@@ -13,13 +13,19 @@ namespace IPB_semestral_project_Version2.Controllers
     [Route("[controller]")]
     public class TourSystemController : ControllerBase
     {
-        private readonly ITourService TourService;
-
-        public TourSystemController(ITourService tourService)
+        private readonly ITourService TourService = new TourService();
+        private readonly ILogger<TourSystemController> _logger;
+        public TourSystemController(ILogger<TourSystemController> logger)
         {
+            _logger = logger;
+        }
+         
+        /*
+        public TourSystemController(ITourService tourService)
+        {{
             this.TourService = tourService;
         }
-
+        */  
         [HttpGet]
         public IEnumerable<Formulation> Get()
         {

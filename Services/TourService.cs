@@ -25,7 +25,7 @@ namespace IPB_semestral_project_Version2.Services
 
         public IEnumerable<Formulation> GetFormulation() 
         {
-            return Formulations;
+            return Formulations.ToArray();
         }
 
     }
